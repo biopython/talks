@@ -1,0 +1,35 @@
+(One page PDF limit)
+
+The Biopython Project is a long-running distributed collaborative effort,
+supported by the Open Bioinformatics Foundation, which develops a freely
+available Python library for biological computation \cite{AppNote}. This
+talk will look ahead to the year to come, and give a summary of the project
+news since the 1.74 release in July 2019, and the talk at BOSC 2019.
+
+There have been three releases: Biopython 1.75 (November 2019), Biopython 1.76
+(December 2019), and Biopython 1.77 (expected May/June 2020). This year saw
+the adoption of the black Python coding style, our final release to
+support Python 2, and substantial code cleanup to focus on Python 3 only.
+
+In 2017 we started a re-licensing plan, to transition away
+from our liberal but unique Biopython License Agreement to the similar
+but very widely used 3-Clause BSD License. We are reviewing the code
+base authorship file-by-file, to gradually dual license the entire project.
+All new contributions are dual licensed, and currently over 75% of the Python
+and C files in the main library have been dual licensed.
+
+Another important effort had been improving the unit test coverage, which can
+be viewed at CodeCov.io.
+Sadly, this has stalled at about 85% (excluding online tests) for some time.
+
+We are using GitHub-integrated continuous integration testing on Linux (using
+TravisCI) and Windows (using AppVeyor),
+including enforcing the Python PEP8, PEP257 and black coding style guidelines.
+We recommend a simple git pre-commit hook using flake8 for
+our contributors, which aims to reduce the human time costs in writing
+compliant code.
+
+Finally, since our last update talk in July 2019, Biopython has had 37 named
+contributors including 15 newcomers. This reflects our policy of trying to
+encourage even small contributions. Our total named contributor count is now
+at 275 since the project began, over twenty year ago.
